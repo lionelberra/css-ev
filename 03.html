@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Bebas+Neue&family=Bitcount+Single:wght@100..900&family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+
+        /*header*/
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            border-top: 5px solid #D13C31;
+            border-bottom: 5px solid #00137F;
+        }
+
+        .lista {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            list-style: none;
+
+
+            a {
+                color: black;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: "Bitcount Single", system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                    "slnt" 0,
+                    "CRSV" 0.5,
+                    "ELSH" 0,
+                    "ELXP" 0;
+            }
+        }
+
+        button {
+            background-color: #ffffff;
+            border-bottom: 18px solid #00137F;
+            border-top: 18px solid #D13C31;
+            border-radius: 100px;
+        }
+
+        .promocion {
+            height: 44px;
+            color: black;
+            background-color: #ffffff;
+            border-bottom: 18px solid #00137F;
+            border-top: 18px solid #D13C31;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.1em;
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+        }
+
+        /*main*/
+        .frase1 {
+            font-size: 2.9em;
+            color: #ffffff;
+
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+            margin-left: 90px;
+        }
+
+        .caja1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .anuncio {
+            font-size: 2.1em;
+            color: #ffffff;
+            width: 70%;
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+            margin-left: 100px;
+        }
+
+        .datos {
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin: 50px;
+            border: 4px solid #D13C31;
+        }
+
+        .tema1 {
+            font-size: 2.1em;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+
+
+        }
+
+        .respuestaTema1 {
+            font-size: 1.9em;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+
+        }
+
+        .razones {
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+            font-size: 1.9em;
+            color: black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /*footer*/
+        footer {
+            border-top: 5px solid #D13C31;
+            background-color:gray;
+        }
+        .formulario{
+background-color:#00137F;
+color: #ffffff;
+border:5px solid #D13C31;
+border-radius: 10px;
+padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./imag/logop.png" alt="" width="200px">
+        </div>
+
+        <div>
+            <nav>
+                <ul class="lista">
+                    <li><button><a href="">Inicio</a></button></li>
+                    <li><button><a href="">Productos</a></button></li>
+                    <li> <button><a href="">Precios</a></button></li>
+                    <li> <button><a href="">Contactos</a></button></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div class="promocion">
+        NUEVA COLECCION DE LATAS
+    </div>
+    <main>
+        <section class="caja1">
+            <div>
+                <p class="frase1">la frescura al alcanze de tu boca</p>
+                <p class="anuncio">"Sabor que te eleva. La chispa que necesitas para esos momentos inolvidables. Cada
+                    sorbo, una explosión de frescura que te conecta con la vida. Descubre la diferencia.<br><br> Siempre
+                    un paso adelante. Innovando para ti, creando experiencias únicas. Descubre lo nuevo, lo inesperado,
+                    lo que te hará decir '¡Pepsi, sí!'. La evolución del sabor está aquí. <br><br> La banda sonora de tu
+                    vida. Únete a la ola, siente la energía, vive al máximo. Pepsi está donde están los momentos épicos.
+                    ¿Estás listo para más? #PepsiMomentos."</p>
+            </div>
+            <div>
+                <img src="./imag/pexels-sahil-captures-424973882-17461398.jpg" alt="" width="600px" height="800px">
+            </div>
+        </section>
+        <section class="datos">
+            <h2 class="tema1">
+                ¿Por que deberias tomar pepsi?
+            </h2>
+            <p class="respuestaTema1">Te daremos 3 razones para tomarla. ¡VAMOOS!</p>
+            <div class="razones">
+                <p> SABOR ELOCUENTE<img src="./imag/saboreando-la-comida.png" alt="" width="40px"></p>
+                <p> Desde el corazón de Cipolletti, cada chispeante burbuja de Pepsi despliega un sabor elocuente que,
+                    sin
+                    necesidad de palabras, te envuelve en una experiencia inconfundible de frescura y satisfacción
+                    plena,
+                    comunicando directamente al paladar la alegría de cada instante.</p>
+                <p>BURBUJAS EXPLOSIVAS<img src="./imag/burbujas.png" alt="" width="40px"></p>
+                <p>Cada sorbo de Pepsi desata una experiencia efervescente, donde burbujas explosivas danzan en tu
+                    paladar, liberando un estallido de frescura inigualable que convierte cada momento en una
+                    celebración llena de sabor.</p>
+                <p>FRESCURA INMEDIATA <img src="./imag/cafe-frio.png" alt="" width="40px"></p>
+                <p>Cada vez que abres una Pepsi, experimentas una frescura inmediata que te envuelve, un estallido
+                    revitalizante que en cada sorbo transforma el instante en un momento de puro placer.</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>
+            <nav>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </nav>
+
+        </div>
+        <div>
+            <div>
+<form >
+<fieldset class="formulario">
+
+    <label for="nombre">nombre</label>
+    <input type="text" name="nombre" id="nombre" value="" required>
+    <br>
+    <label for="apellido">apellido:</label>
+    <input type="text" name="apellido" id="apellido" value="" required>
+    <br>
+    <label for="correo electronico">correo electronico</label>
+    <input type="email" name="correo electronico" id="correo electronico" value="" required>
+    <br>
+    <label for="fecha de nacimiento">fecha de nacimiento </label>
+    <input type="date" name="fecha de nacimiento" id="fecha de nacimiento" value="" required>
+    <br>
+    <input type="submit" name="submit" value="enviar">
+</fieldset>
+
+</form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="">Trabajo</a></li>
+                </ul>
+            </div>
+            <div class="whatsapp">
+                <a href=""><img src="./assets/img/" alt="" width="65"></a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
