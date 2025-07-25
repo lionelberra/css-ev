@@ -181,15 +181,74 @@
         /*footer*/
         footer {
             border-top: 5px solid #D13C31;
-            background-color:gray;
+            background-color: #00137F;
         }
-        .formulario{
-background-color:#00137F;
-color: #ffffff;
-border:5px solid #D13C31;
-border-radius: 10px;
-padding-top: 10px;
+
+        .formulario {
+            color: #ffffff;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: "Bitcount Single", system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                    "slnt" 0,
+                    "CRSV" 0.5,
+                    "ELSH" 0,
+                    "ELXP" 0;
+        
+            color: #ffffff;
+            border: 0;
+            padding-top: 10px;
         }
+
+        .columna {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 10px;
+        }
+
+        .plataformas {
+            border-bottom: 2px solid #D13C31;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .consultas {
+            list-style: none;
+
+
+            a {
+                color: #ffffff;
+                font-size: 20px;
+                text-decoration: none;
+                font-family: "Bitcount Single", system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                    "slnt" 0,
+                    "CRSV" 0.5,
+                    "ELSH" 0,
+                    "ELXP" 0;
+            }
+        }
+
+        .whatsapp {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+        .barra{
+            width: 100%;
+            border-radius: 10px;
+        }
+     .submit{
+        margin-top: 5px;
+        border-radius: 10px;
+     }
     </style>
 </head>
 
@@ -255,47 +314,53 @@ padding-top: 10px;
     </main>
     <footer>
         <div>
-            <nav>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <nav class="plataformas">
+                <a href="https://www.facebook.com/?locale=es_LA"><img src="./imag/facebook.png" alt="" width="55"></a>
+                <a href="https://www.instagram.com/"><img src="./imag/instagram.png" alt="" width="55"></a>
+                <a href="https://www.youtube.com/?app=desktop&hl=es"><img src="./imag/youtube.png" alt=""
+                        width="55"></a>
+                <a href="https://x.com/?lang=es"><img src="./imag/twitter.png" alt="" width="55"></a>
             </nav>
 
         </div>
-        <div>
-            <div>
-<form >
-<fieldset class="formulario">
+        <div class="columna">
 
-    <label for="nombre">nombre</label>
-    <input type="text" name="nombre" id="nombre" value="" required>
-    <br>
-    <label for="apellido">apellido:</label>
-    <input type="text" name="apellido" id="apellido" value="" required>
-    <br>
-    <label for="correo electronico">correo electronico</label>
-    <input type="email" name="correo electronico" id="correo electronico" value="" required>
-    <br>
-    <label for="fecha de nacimiento">fecha de nacimiento </label>
-    <input type="date" name="fecha de nacimiento" id="fecha de nacimiento" value="" required>
-    <br>
-    <input type="submit" name="submit" value="enviar">
-</fieldset>
-
-</form>
+            <div class="whatsapp">
+                <a href="https://www.whatsapp.com/?lang=es_LA"><img src="./imag/whatsapp.png" alt="" width="65"></a>
             </div>
             <div>
-                <ul>
+                <ul class="consultas">
                     <li><a href="">Productos</a></li>
                     <li><a href="">Ayuda</a></li>
                     <li><a href="">Trabajo</a></li>
                 </ul>
             </div>
-            <div class="whatsapp">
-                <a href=""><img src="./assets/img/" alt="" width="65"></a>
+            <div>
+                <form>
+                    <fieldset class="formulario">
+
+                        <label for="nombre">nombre</label>
+                        <input type="text" name="nombre" id="nombre" value="" required class="barra">
+                        <br>
+                        <label for="apellido">apellido:</label>
+                        <input type="text" name="apellido" id="apellido" value="" required class="barra">
+                        <br>
+                        <label for="correo electronico">correo electronico</label>
+                        <input type="email" name="correo electronico" id="correo electronico" value="" required class="barra">
+                        <br>
+                        <label for="fecha de nacimiento">fecha de nacimiento </label>
+                        <input type="date" name="fecha de nacimiento" id="fecha de nacimiento" value="" required class="barra">
+                        <br>
+                        <input type="submit" name="submit" value="enviar" class="submit">
+                    </fieldset>
+
+                </form>
             </div>
+
+
+
         </div>
+
 
     </footer>
 </body>
